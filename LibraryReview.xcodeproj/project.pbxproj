@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		F72F86EF1B8B866B00F966D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F86EE1B8B866B00F966D4 /* main.m */; };
 		F72F86F21B8B866B00F966D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F86F11B8B866B00F966D4 /* AppDelegate.m */; };
-		F72F86F51B8B866B00F966D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F86F41B8B866B00F966D4 /* ViewController.m */; };
+		F72F86F51B8B866B00F966D4 /* AllBooksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F86F41B8B866B00F966D4 /* AllBooksListViewController.m */; };
 		F72F86F81B8B866B00F966D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72F86F61B8B866B00F966D4 /* Main.storyboard */; };
 		F72F86FA1B8B866B00F966D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72F86F91B8B866B00F966D4 /* Images.xcassets */; };
 		F72F86FD1B8B866B00F966D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F86FB1B8B866B00F966D4 /* LaunchScreen.xib */; };
 		F72F87091B8B866B00F966D4 /* LibraryReviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87081B8B866B00F966D4 /* LibraryReviewTests.m */; };
+		F72F87141B8B88AD00F966D4 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87131B8B88AD00F966D4 /* BookDetailViewController.m */; };
+		F72F87171B8B8B2900F966D4 /* BookSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */; };
+		F72F871A1B8B8CFE00F966D4 /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */; };
+		F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		F72F86EE1B8B866B00F966D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F72F86F01B8B866B00F966D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F72F86F11B8B866B00F966D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F72F86F31B8B866B00F966D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F72F86F41B8B866B00F966D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F72F86F31B8B866B00F966D4 /* AllBooksListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllBooksListViewController.h; sourceTree = "<group>"; };
+		F72F86F41B8B866B00F966D4 /* AllBooksListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllBooksListViewController.m; sourceTree = "<group>"; };
 		F72F86F71B8B866B00F966D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72F86F91B8B866B00F966D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F72F86FC1B8B866B00F966D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F72F87021B8B866B00F966D4 /* LibraryReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F87071B8B866B00F966D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72F87081B8B866B00F966D4 /* LibraryReviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryReviewTests.m; sourceTree = "<group>"; };
+		F72F87121B8B88AD00F966D4 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		F72F87131B8B88AD00F966D4 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		F72F87151B8B8B2900F966D4 /* BookSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSwitchTableViewCell.h; sourceTree = "<group>"; };
+		F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSwitchTableViewCell.m; sourceTree = "<group>"; };
+		F72F87181B8B8CFE00F966D4 /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
+		F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
+		F72F871B1B8B8D8200F966D4 /* AllBooksTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBooksTableViewDataSource.h; sourceTree = "<group>"; };
+		F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBooksTableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +95,17 @@
 			children = (
 				F72F86F01B8B866B00F966D4 /* AppDelegate.h */,
 				F72F86F11B8B866B00F966D4 /* AppDelegate.m */,
-				F72F86F31B8B866B00F966D4 /* ViewController.h */,
-				F72F86F41B8B866B00F966D4 /* ViewController.m */,
+				F72F86F31B8B866B00F966D4 /* AllBooksListViewController.h */,
+				F72F86F41B8B866B00F966D4 /* AllBooksListViewController.m */,
 				F72F86F61B8B866B00F966D4 /* Main.storyboard */,
+				F72F871B1B8B8D8200F966D4 /* AllBooksTableViewDataSource.h */,
+				F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */,
+				F72F87181B8B8CFE00F966D4 /* EditBookViewController.h */,
+				F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */,
+				F72F87151B8B8B2900F966D4 /* BookSwitchTableViewCell.h */,
+				F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */,
+				F72F87121B8B88AD00F966D4 /* BookDetailViewController.h */,
+				F72F87131B8B88AD00F966D4 /* BookDetailViewController.m */,
 				F72F86F91B8B866B00F966D4 /* Images.xcassets */,
 				F72F86FB1B8B866B00F966D4 /* LaunchScreen.xib */,
 				F72F86EC1B8B866B00F966D4 /* Supporting Files */,
@@ -219,8 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72F86F51B8B866B00F966D4 /* ViewController.m in Sources */,
+				F72F86F51B8B866B00F966D4 /* AllBooksListViewController.m in Sources */,
+				F72F871A1B8B8CFE00F966D4 /* EditBookViewController.m in Sources */,
 				F72F86F21B8B866B00F966D4 /* AppDelegate.m in Sources */,
+				F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */,
+				F72F87141B8B88AD00F966D4 /* BookDetailViewController.m in Sources */,
+				F72F87171B8B8B2900F966D4 /* BookSwitchTableViewCell.m in Sources */,
 				F72F86EF1B8B866B00F966D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +440,7 @@
 				F72F870E1B8B866B00F966D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F72F870F1B8B866B00F966D4 /* Build configuration list for PBXNativeTarget "LibraryReviewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				F72F87111B8B866B00F966D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
