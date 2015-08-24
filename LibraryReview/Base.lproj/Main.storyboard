@@ -58,7 +58,7 @@
                                             <outlet property="authorLabel" destination="NTe-mf-9yi" id="Lqq-xN-pVK"/>
                                             <outlet property="hasReadSwitch" destination="7fh-Ev-5Wq" id="EFC-I5-LhK"/>
                                             <outlet property="titleLabel" destination="d0p-Dt-rfV" id="FgJ-tv-DB2"/>
-                                            <segue destination="86r-0G-3PE" kind="show" id="9iE-2X-9aw"/>
+                                            <segue destination="86r-0G-3PE" kind="show" identifier="bookCellTapped" id="9iE-2X-9aw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
