@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     // Initialization code
 }
+- (IBAction)switchToggled:(UISwitch *)sender {
+    [self.delegate switchCellSwitchToggled:self];
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
