@@ -7,6 +7,7 @@
 //
 
 #import "BookDetailViewController.h"
+#import "EditBookViewController.h"
 
 @interface BookDetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -23,7 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     self.titleLabel.text = self.book.title;
     self.authorLabel.text = self.book.author;
     self.summaryLabel.text = self.book.summary;
@@ -36,7 +39,16 @@
     self.hasReadSwitch.enabled = NO;
     
     self.reviewTextView.text = self.book.review;
-    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"editBook"]) {
+        
+        UINavigationController *navController = segue.destinationViewController;
+        EditBookViewController *editVC = ((EditBookViewController *)navController.topViewController);
+        
+        editVC.book = self.book;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -40,6 +40,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-Ev-5Wq">
                                                     <rect key="frame" x="550" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchToggled:" destination="Ixy-2Y-Dad" eventType="valueChanged" id="6J2-yN-coB"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -180,7 +183,7 @@
                     <navigationItem key="navigationItem" title="Title" id="mGr-ZJ-Z3l">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="bmE-lg-FAh">
                             <connections>
-                                <segue destination="yVg-Y5-2HG" kind="presentation" id="tto-ML-jRG"/>
+                                <segue destination="yVg-Y5-2HG" kind="presentation" identifier="editBook" id="tto-ML-jRG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

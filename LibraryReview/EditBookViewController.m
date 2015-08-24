@@ -28,6 +28,23 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.book) {
+        self.titleTextField.text = self.book.title;
+        self.authorTextField.text = self.book.author;
+        self.summaryTextField.text = self.book.summary;
+        self.ratingSegmentedControl.selectedSegmentIndex = [self.book.rating integerValue];
+        if ([self.book.rating isEqualToNumber:@0]) {
+            self.hasReadSwitch.on = NO;
+        } else {
+            self.hasReadSwitch.on = YES;
+        }
+        self.reviewTextView.text = self.book.review;
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
