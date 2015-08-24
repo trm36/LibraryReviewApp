@@ -7,8 +7,17 @@
 //
 
 #import "EditBookViewController.h"
+#import "BookController.h"
+#import "Stack.h"
 
 @interface EditBookViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *authorTextField;
+@property (weak, nonatomic) IBOutlet UITextField *summaryTextField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *ratingSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISwitch *hasReadSwitch;
+@property (weak, nonatomic) IBOutlet UITextView *reviewTextView;
 
 @end
 
@@ -29,6 +38,23 @@
 
 
 - (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
+    
+    if (!self.book) {
+        self.book = [[BookController sharedInstance] createBook];
+    }
+    
+    self.book.title = self.titleTextField.text;
+    self.book.author = self.authorTextField.text;
+    self.book.summary = self.summaryTextField.text;
+    self.book.rating = [NSNumber numberWithInteger:self.ratingSegmentedControl.selectedSegmentIndex];
+    if (self.hasReadSwitch.on) {
+        self.book.hasRead = @1;
+    } else {
+        self.book.hasRead = @0;
+    }
+    
+    [[Stack sharedInstance].managedObjectContext save:nil];
+    
     [self.navigationController dismissViewControllerAnimated:YES
                              completion:nil];
 }
