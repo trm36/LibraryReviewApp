@@ -20,6 +20,8 @@
 		F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */; };
 		F72F87241B8B922200F966D4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F72F87221B8B922200F966D4 /* Model.xcdatamodeld */; };
 		F72F87271B8B931500F966D4 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87261B8B931500F966D4 /* Book.m */; };
+		F72F872A1B8B933C00F966D4 /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87291B8B933C00F966D4 /* BookController.m */; };
+		F72F872D1B8B95D900F966D4 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F872C1B8B95D900F966D4 /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		F72F87231B8B922200F966D4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F72F87251B8B931500F966D4 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		F72F87261B8B931500F966D4 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F72F87281B8B933C00F966D4 /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
+		F72F87291B8B933C00F966D4 /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		F72F872B1B8B95D900F966D4 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		F72F872C1B8B95D900F966D4 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +178,12 @@
 		F72F87211B8B91E200F966D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F72F872B1B8B95D900F966D4 /* Stack.h */,
+				F72F872C1B8B95D900F966D4 /* Stack.m */,
 				F72F87251B8B931500F966D4 /* Book.h */,
 				F72F87261B8B931500F966D4 /* Book.m */,
+				F72F87281B8B933C00F966D4 /* BookController.h */,
+				F72F87291B8B933C00F966D4 /* BookController.m */,
 				F72F87221B8B922200F966D4 /* Model.xcdatamodeld */,
 			);
 			name = Model;
@@ -287,6 +297,8 @@
 				F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */,
 				F72F87141B8B88AD00F966D4 /* BookDetailViewController.m in Sources */,
 				F72F87171B8B8B2900F966D4 /* BookSwitchTableViewCell.m in Sources */,
+				F72F872A1B8B933C00F966D4 /* BookController.m in Sources */,
+				F72F872D1B8B95D900F966D4 /* Stack.m in Sources */,
 				F72F86EF1B8B866B00F966D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
