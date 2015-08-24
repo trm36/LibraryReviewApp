@@ -11,6 +11,8 @@
 
 @interface BookController : NSObject
 
++ (BookController *)sharedInstance;
+
 - (Book *)createBook;
 @property (strong, nonatomic) NSArray *books;
 //Update = Pointers and Save;

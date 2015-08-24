@@ -12,6 +12,16 @@
 
 @implementation BookController
 
++ (BookController *)sharedInstance {
+    static BookController *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[BookController alloc] init];
+    });
+    
+    return sharedInstance;
+}
+
 - (Book *)createBook {
     Book *book = [NSEntityDescription insertNewObjectForEntityForName:@"Book" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
     

@@ -25,8 +25,39 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ixy-2Y-Dad" id="Q0U-aq-prV">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-Dt-rfV">
+                                                    <rect key="frame" x="1" y="0.0" width="541" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-mf-9yi">
+                                                    <rect key="frame" x="1" y="19" width="541" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-Ev-5Wq">
+                                                    <rect key="frame" x="550" y="6" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7fh-Ev-5Wq" firstAttribute="centerY" secondItem="Q0U-aq-prV" secondAttribute="centerY" id="4KQ-ri-YSR"/>
+                                                <constraint firstItem="NTe-mf-9yi" firstAttribute="top" secondItem="Q0U-aq-prV" secondAttribute="topMargin" constant="11" id="8j8-iO-mbQ"/>
+                                                <constraint firstItem="d0p-Dt-rfV" firstAttribute="leading" secondItem="NTe-mf-9yi" secondAttribute="leading" id="CGq-ON-HFD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7fh-Ev-5Wq" secondAttribute="trailing" constant="-7" id="N8Q-hh-7x0"/>
+                                                <constraint firstItem="7fh-Ev-5Wq" firstAttribute="leading" secondItem="d0p-Dt-rfV" secondAttribute="trailing" constant="8" symbolic="YES" id="SH5-h7-63a"/>
+                                                <constraint firstItem="d0p-Dt-rfV" firstAttribute="leading" secondItem="Q0U-aq-prV" secondAttribute="leadingMargin" constant="-7" id="VYV-1b-WgT"/>
+                                                <constraint firstItem="7fh-Ev-5Wq" firstAttribute="leading" secondItem="NTe-mf-9yi" secondAttribute="trailing" constant="8" symbolic="YES" id="kvi-As-Y76"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NTe-mf-9yi" secondAttribute="bottom" constant="-5" id="lL1-1b-5hF"/>
+                                                <constraint firstItem="d0p-Dt-rfV" firstAttribute="top" secondItem="Q0U-aq-prV" secondAttribute="top" id="v5a-fu-WVX"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="authorLabel" destination="NTe-mf-9yi" id="Lqq-xN-pVK"/>
+                                            <outlet property="hasReadSwitch" destination="7fh-Ev-5Wq" id="EFC-I5-LhK"/>
+                                            <outlet property="titleLabel" destination="d0p-Dt-rfV" id="FgJ-tv-DB2"/>
                                             <segue destination="86r-0G-3PE" kind="show" id="9iE-2X-9aw"/>
                                         </connections>
                                     </tableViewCell>
@@ -307,6 +338,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tto-ML-jRG"/>
+        <segue reference="4NI-NE-voD"/>
     </inferredMetricsTieBreakers>
 </document>
