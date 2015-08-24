@@ -184,6 +184,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="authorLabel" destination="uCa-0N-dXF" id="eMv-CF-zt0"/>
+                        <outlet property="hasReadSwitch" destination="icG-iq-cdf" id="MnE-Zk-vfL"/>
+                        <outlet property="ratingLabel" destination="N7f-z6-jUE" id="Seh-6q-l5M"/>
+                        <outlet property="reviewTextView" destination="xX6-ha-iOM" id="QpL-GA-czq"/>
+                        <outlet property="summaryLabel" destination="1nX-Mx-fSK" id="dk7-Za-pHO"/>
+                        <outlet property="titleLabel" destination="cZC-MV-n5n" id="2gQ-RT-R3F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEk-p7-DUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,6 +357,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4NI-NE-voD"/>
+        <segue reference="tto-ML-jRG"/>
     </inferredMetricsTieBreakers>
 </document>
