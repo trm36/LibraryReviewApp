@@ -18,6 +18,10 @@
 		F72F87171B8B8B2900F966D4 /* BookSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */; };
 		F72F871A1B8B8CFE00F966D4 /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */; };
 		F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */; };
+		F72F87241B8B922200F966D4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F72F87221B8B922200F966D4 /* Model.xcdatamodeld */; };
+		F72F87271B8B931500F966D4 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87261B8B931500F966D4 /* Book.m */; };
+		F72F872A1B8B933C00F966D4 /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F87291B8B933C00F966D4 /* BookController.m */; };
+		F72F872D1B8B95D900F966D4 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = F72F872C1B8B95D900F966D4 /* Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,13 @@
 		F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 		F72F871B1B8B8D8200F966D4 /* AllBooksTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBooksTableViewDataSource.h; sourceTree = "<group>"; };
 		F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBooksTableViewDataSource.m; sourceTree = "<group>"; };
+		F72F87231B8B922200F966D4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F72F87251B8B931500F966D4 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F72F87261B8B931500F966D4 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F72F87281B8B933C00F966D4 /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
+		F72F87291B8B933C00F966D4 /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		F72F872B1B8B95D900F966D4 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		F72F872C1B8B95D900F966D4 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +106,11 @@
 			children = (
 				F72F86F01B8B866B00F966D4 /* AppDelegate.h */,
 				F72F86F11B8B866B00F966D4 /* AppDelegate.m */,
-				F72F86F31B8B866B00F966D4 /* AllBooksListViewController.h */,
-				F72F86F41B8B866B00F966D4 /* AllBooksListViewController.m */,
 				F72F86F61B8B866B00F966D4 /* Main.storyboard */,
-				F72F871B1B8B8D8200F966D4 /* AllBooksTableViewDataSource.h */,
-				F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */,
-				F72F87181B8B8CFE00F966D4 /* EditBookViewController.h */,
-				F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */,
-				F72F87151B8B8B2900F966D4 /* BookSwitchTableViewCell.h */,
-				F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */,
-				F72F87121B8B88AD00F966D4 /* BookDetailViewController.h */,
-				F72F87131B8B88AD00F966D4 /* BookDetailViewController.m */,
+				F72F871E1B8B91B600F966D4 /* Book List View Controllers */,
+				F72F871F1B8B91C500F966D4 /* Edit Book View Controllers */,
+				F72F87201B8B91D000F966D4 /* Detail Book View Controllers */,
+				F72F87211B8B91E200F966D4 /* Model */,
 				F72F86F91B8B866B00F966D4 /* Images.xcassets */,
 				F72F86FB1B8B866B00F966D4 /* LaunchScreen.xib */,
 				F72F86EC1B8B866B00F966D4 /* Supporting Files */,
@@ -137,6 +142,51 @@
 				F72F87071B8B866B00F966D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F72F871E1B8B91B600F966D4 /* Book List View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F72F86F31B8B866B00F966D4 /* AllBooksListViewController.h */,
+				F72F86F41B8B866B00F966D4 /* AllBooksListViewController.m */,
+				F72F871B1B8B8D8200F966D4 /* AllBooksTableViewDataSource.h */,
+				F72F871C1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m */,
+				F72F87151B8B8B2900F966D4 /* BookSwitchTableViewCell.h */,
+				F72F87161B8B8B2900F966D4 /* BookSwitchTableViewCell.m */,
+			);
+			name = "Book List View Controllers";
+			sourceTree = "<group>";
+		};
+		F72F871F1B8B91C500F966D4 /* Edit Book View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F72F87181B8B8CFE00F966D4 /* EditBookViewController.h */,
+				F72F87191B8B8CFE00F966D4 /* EditBookViewController.m */,
+			);
+			name = "Edit Book View Controllers";
+			sourceTree = "<group>";
+		};
+		F72F87201B8B91D000F966D4 /* Detail Book View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F72F87121B8B88AD00F966D4 /* BookDetailViewController.h */,
+				F72F87131B8B88AD00F966D4 /* BookDetailViewController.m */,
+			);
+			name = "Detail Book View Controllers";
+			sourceTree = "<group>";
+		};
+		F72F87211B8B91E200F966D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F72F872B1B8B95D900F966D4 /* Stack.h */,
+				F72F872C1B8B95D900F966D4 /* Stack.m */,
+				F72F87251B8B931500F966D4 /* Book.h */,
+				F72F87261B8B931500F966D4 /* Book.m */,
+				F72F87281B8B933C00F966D4 /* BookController.h */,
+				F72F87291B8B933C00F966D4 /* BookController.m */,
+				F72F87221B8B922200F966D4 /* Model.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,11 +290,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72F86F51B8B866B00F966D4 /* AllBooksListViewController.m in Sources */,
+				F72F87271B8B931500F966D4 /* Book.m in Sources */,
 				F72F871A1B8B8CFE00F966D4 /* EditBookViewController.m in Sources */,
 				F72F86F21B8B866B00F966D4 /* AppDelegate.m in Sources */,
+				F72F87241B8B922200F966D4 /* Model.xcdatamodeld in Sources */,
 				F72F871D1B8B8D8200F966D4 /* AllBooksTableViewDataSource.m in Sources */,
 				F72F87141B8B88AD00F966D4 /* BookDetailViewController.m in Sources */,
 				F72F87171B8B8B2900F966D4 /* BookSwitchTableViewCell.m in Sources */,
+				F72F872A1B8B933C00F966D4 /* BookController.m in Sources */,
+				F72F872D1B8B95D900F966D4 /* Stack.m in Sources */,
 				F72F86EF1B8B866B00F966D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +506,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F72F87221B8B922200F966D4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F72F87231B8B922200F966D4 /* Model.xcdatamodel */,
+			);
+			currentVersion = F72F87231B8B922200F966D4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F72F86E11B8B866B00F966D4 /* Project object */;
 }
